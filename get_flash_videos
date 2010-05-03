@@ -65,7 +65,8 @@ BEGIN {
     quiet => 0,
     quality => "high",
     subtitles => 0,
-    info => 0
+    info => 0,
+    max_size => 0
   );
 }
 
@@ -96,6 +97,7 @@ Options:
   -v --version    Print version.
   -y --yes        Say yes to any questions (don't prompt for any information).
   -i --info       Print out info about video instead of downloading.
+  -m --max-size   Maximum number of bytes to download.
 
 EOF
 
@@ -136,6 +138,7 @@ GetOptions(
   "quality|r=s"  => \$opt{quality},
   "subtitles"    => \$opt{subtitles},
   "info|i"       => \$opt{info},
+  "max-size|m=s" => \$opt{max_size}
 ) or die "Try $0 --help for more information.\n";
 
 if($opt{version}) {
