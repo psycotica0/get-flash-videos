@@ -185,6 +185,11 @@ sub run {
     if(defined $self->{stream} && $self->{downloaded} > 300_000) {
       $self->{stream}->();
     }
+
+    if($::opt{max_size} && $self->{downloaded} > $::opt{max_size}) {
+      print "File exceeds your max size of " . $::opt{max_size} . " bytes.  Aborting.\n";
+      exit;
+    }
   }
 
   waitpid $pid, 0;

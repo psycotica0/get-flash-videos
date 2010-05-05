@@ -125,6 +125,11 @@ sub download {
     ':content_cb' => sub { 
         my ($data, $response) = @_;
 
+        if($::opt{max_size} && $response->header('Content-Length') && $response->header('Content-Length') > $::opt{max_size}) {
+          print "File exceeds your max size of " . $::opt{max_size} . " bytes.  Aborting.\n";
+          exit;
+        }
+
         # If we're resuming, Content-Length will just be the length of the
         # range the server is sending back, so add on the offset to make %
         # completed accurate.
@@ -189,6 +194,12 @@ sub download {
 
         $self->{downloaded} += $len;
         $self->progress;
+
+        if($::opt{max_size} && $self->{downloaded} > $::opt{max_size}) {
+          print "File exceeds your max size: " . $::opt{max_size} . " bytes.  Aborting.\n";
+          exit;
+        }
+
     }, ':read_size_hint' => 16384);
 
   if($browser->response->header("X-Died")) {
