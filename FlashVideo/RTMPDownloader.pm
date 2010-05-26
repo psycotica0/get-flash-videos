@@ -4,6 +4,7 @@ package FlashVideo::RTMPDownloader;
 use strict;
 use base 'FlashVideo::Downloader';
 use IPC::Open3;
+use Fcntl ();
 use Symbol qw(gensym);
 use FlashVideo::Utils;
 
@@ -29,7 +30,6 @@ sub download {
   my($r_fh, $w_fh); # So Perl doesn't close them behind our back..
 
   if ($rtmp_data->{live} && $::opt{play}) {
-    require Fcntl;
     # Playing live stream, we pipe this straight to the player, rather than
     # saving on disk.
     # XXX: The use of /dev/fd could go away now rtmpdump supports streaming to
@@ -102,18 +102,33 @@ sub get_rtmp_program {
   return "rtmpdump";
 }
 
+sub get_command {
+  my($self, $rtmp_data, $debug) = @_;
+
+  return map {
+    my $arg = $_;
+
+    (ref $rtmp_data->{$arg} eq 'ARRAY'
+      # Arrayref means multiple options of the same type
+      ? (map {
+        ("--$arg" => $debug
+          ? $self->shell_escape($_)
+          : $_) } @{$rtmp_data->{$arg}})
+      # Single argument
+      : ("--$arg" => (($debug && $rtmp_data->{$arg})
+        ? $self->shell_escape($rtmp_data->{$arg})
+        : $rtmp_data->{$arg}) || ()))
+  } keys %$rtmp_data;
+}
+
 sub run {
   my($self, $prog, $rtmp_data) = @_;
 
-  debug "Running $prog", 
-    join(" ", map { ("--$_" => $rtmp_data->{$_} ? $self->shell_escape($rtmp_data->{$_}) : ()) } keys
-        %$rtmp_data);
+  debug "Running $prog", join(" ", $self->get_command($rtmp_data, 1));
 
   my($in, $out, $err);
   $err = gensym;
-
-  my $pid = open3($in, $out, $err, $prog,
-    map { ("--$_" => ($rtmp_data->{$_} || ())) } keys %$rtmp_data);
+  my $pid = open3($in, $out, $err, $prog, $self->get_command($rtmp_data));
 
   # Windows doesn't send signals to child processes, so we need to do it
   # manually to ensure that we don't have stray rtmpdump processes.
