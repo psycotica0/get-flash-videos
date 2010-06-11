@@ -66,7 +66,8 @@ BEGIN {
     quality => "high",
     subtitles => 0,
     info => 0,
-    max_size => 0
+    max_size => 0,
+    no_redirect => 0
   );
 }
 
@@ -84,20 +85,21 @@ Search for 'search string'. If the URL contains characters such as '&' you
 will need to quote it.
 
 Options:
-     --add-plugin Add a plugin from a URL.
-  -d --debug      Print extra debugging information.
-  -f --filename   Filename to save the video as.
-  -p --play       Start playing the video once enough has been downloaded.
-     --player     Player to use for the video (default: $opt{player}).
-     --proxy      Proxy to use, use host:port for SOCKS, or URL for HTTP.
-     --subtitles  Download subtitles where available.
-  -q --quiet      Be quiet (only print errors).
-  -r --quality    Quality to download at (high|medium|low, or site specific).
-  -u --update     Update to latest version.
-  -v --version    Print version.
-  -y --yes        Say yes to any questions (don't prompt for any information).
-  -i --info       Print out info about video instead of downloading.
-  -m --max-size   Maximum number of bytes to download.
+     --add-plugin   Add a plugin from a URL.
+  -d --debug        Print extra debugging information.
+  -f --filename     Filename to save the video as.
+  -p --play         Start playing the video once enough has been downloaded.
+     --player       Player to use for the video (default: $opt{player}).
+     --proxy        Proxy to use, use host:port for SOCKS, or URL for HTTP.
+     --subtitles    Download subtitles where available.
+  -q --quiet        Be quiet (only print errors).
+  -r --quality      Quality to download at (high|medium|low, or site specific).
+  -u --update       Update to latest version.
+  -v --version      Print version.
+  -y --yes          Say yes to any questions (don't prompt for any information).
+  -i --info         Print out info about video instead of downloading.
+  -m --max-size     Maximum number of bytes to download.
+  -R --no-redirect  Prevent the fetcher from following redirections.
 
 EOF
 
@@ -138,7 +140,8 @@ GetOptions(
   "quality|r=s"  => \$opt{quality},
   "subtitles"    => \$opt{subtitles},
   "info|i"       => \$opt{info},
-  "max-size|m=s" => \$opt{max_size}
+  "max-size|m=s" => \$opt{max_size},
+  "no-redirect|R"=> \$opt{no_redirect},
 ) or die "Try $0 --help for more information.\n";
 
 if($opt{version}) {
@@ -293,6 +296,7 @@ sub download {
   # the page to determine this.
   info "Downloading $url";
   my $browser = FlashVideo::Mechanize->new;
+  $browser->allow_redirects unless @opt{no_redirect};
   $browser->get($url);
 
   # (Redirect check is for Youtube which sometimes redirects to login page
