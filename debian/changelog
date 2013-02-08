@@ -1,3 +1,15 @@
+libapp-get-flash-videos-perl (1.25-psycotica0-2013-02-08-00~2f12e6dc9cd2ee3ecc9df285431ef6f207c0d7df) unstable; urgency=low
+
+  * Cut Release
+
+ -- Christopher Vollick <0@psycoti.ca>  Fri, 08 Feb 2013 14:27:27 -0500
+
+get-flash-videos (1.25-psycotica0-2013-02-08-00~2f12e6dc9cd2ee3ecc9df285431ef6f207c0d7df) unstable; urgency=low
+
+  * Cut Release
+
+ -- Christopher Vollick <0@psycoti.ca>  Fri, 08 Feb 2013 14:27:27 -0500
+
 libapp-get-flash-videos-perl (1.24-1) stable; urgency=low
 
   * Switch to CPAN style releases
