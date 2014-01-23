@@ -1,8 +1,8 @@
-libapp-get-flash-videos-perl (1.25-psycotica0-2013-03-09-00~727dcb) unstable; urgency=low
+libapp-get-flash-videos-perl (1.25-psycotica0-2014-01-23-00~2d84db) unstable; urgency=low
 
   * Cut Release
 
- -- Christopher Vollick <0@psycoti.ca>  Sat, 09 Mar 2013 17:56:10 -0500
+ -- Christopher Vollick <0@psycoti.ca>  Thu, 23 Jan 2014 11:42:38 -0500
 
 get-flash-videos (1.25-psycotica0-2013-02-08-00~2f12e6dc9cd2ee3ecc9df285431ef6f207c0d7df) unstable; urgency=low
 
