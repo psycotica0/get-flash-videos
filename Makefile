@@ -18,11 +18,11 @@
 #     EXE_FILES => [q[bin/get_flash_videos]]
 #     MAN1PODS => { doc/get_flash_videos.pod=>q[blib/man1/get_flash_videos.1] }
 #     MAN3PODS => {  }
-#     META_MERGE => { resources=>{ repository=>q[http://github.com/monsieurvideo/get-flash-videos], license=>q[http://www.apache.org/licenses/LICENSE-2.0.html], bugtracker=>q[http://code.google.com/p/get-flash-videos/issues] } }
+#     META_MERGE => { resources=>{ license=>q[http://www.apache.org/licenses/LICENSE-2.0.html], bugtracker=>q[http://code.google.com/p/get-flash-videos/issues], repository=>q[http://github.com/monsieurvideo/get-flash-videos] } }
 #     MIN_PERL_VERSION => q[5.008]
 #     NAME => q[App::get_flash_videos]
 #     PL_FILES => { bin/get_flash_videos.PL=>q[bin/get_flash_videos] }
-#     PREREQ_PM => { LWP::Protocol::socks=>q[0], LWP::UserAgent=>q[0], LWP::Protocol::https=>q[0], Tie::IxHash=>q[0], URI=>q[0], WWW::Mechanize=>q[0], Module::Find=>q[0] }
+#     PREREQ_PM => { URI=>q[0], LWP::UserAgent=>q[0], Tie::IxHash=>q[0], LWP::Protocol::socks=>q[0], WWW::Mechanize=>q[0], LWP::Protocol::https=>q[0], Module::Find=>q[0] }
 #     TEST_REQUIRES => {  }
 #     VERSION_FROM => q[get_flash_videos]
 
@@ -342,310 +342,310 @@ TO_INST_PM = lib/FlashVideo/Downloader.pm \
 	lib/FlashVideo/VideoPreferences/Account.pm \
 	lib/FlashVideo/VideoPreferences/Quality.pm
 
-PM_TO_BLIB = lib/FlashVideo/Site/Cartoonnetwork.pm \
-	blib/lib/FlashVideo/Site/Cartoonnetwork.pm \
-	lib/FlashVideo/Site/Vkontakte.pm \
-	blib/lib/FlashVideo/Site/Vkontakte.pm \
-	lib/FlashVideo/URLFinder.pm \
-	blib/lib/FlashVideo/URLFinder.pm \
-	lib/FlashVideo/Site/Slashcontrol.pm \
-	blib/lib/FlashVideo/Site/Slashcontrol.pm \
-	lib/FlashVideo/Site/Adultswim.pm \
-	blib/lib/FlashVideo/Site/Adultswim.pm \
-	lib/FlashVideo/Downloader.pm \
-	blib/lib/FlashVideo/Downloader.pm \
-	lib/FlashVideo/Site/Cnet.pm \
-	blib/lib/FlashVideo/Site/Cnet.pm \
-	lib/FlashVideo/Site.pm \
-	blib/lib/FlashVideo/Site.pm \
-	lib/FlashVideo/Site/Joemonster.pm \
-	blib/lib/FlashVideo/Site/Joemonster.pm \
-	lib/FlashVideo/Site/Videolectures.pm \
-	blib/lib/FlashVideo/Site/Videolectures.pm \
-	lib/FlashVideo/Site/Todaysbigthing.pm \
-	blib/lib/FlashVideo/Site/Todaysbigthing.pm \
-	lib/FlashVideo/Site/Tv6play.pm \
-	blib/lib/FlashVideo/Site/Tv6play.pm \
-	lib/FlashVideo/Site/Redbull.pm \
-	blib/lib/FlashVideo/Site/Redbull.pm \
-	lib/FlashVideo/Site/Techcast.pm \
-	blib/lib/FlashVideo/Site/Techcast.pm \
-	lib/FlashVideo/Site/Escapistmagazine.pm \
-	blib/lib/FlashVideo/Site/Escapistmagazine.pm \
-	lib/FlashVideo/Site/Megavideo.pm \
-	blib/lib/FlashVideo/Site/Megavideo.pm \
-	lib/FlashVideo/Site/Aniboom.pm \
-	blib/lib/FlashVideo/Site/Aniboom.pm \
-	lib/FlashVideo/Site/Gawker.pm \
-	blib/lib/FlashVideo/Site/Gawker.pm \
-	lib/FlashVideo/Site/Channel4.pm \
-	blib/lib/FlashVideo/Site/Channel4.pm \
-	lib/FlashVideo/Site/Arte.pm \
-	blib/lib/FlashVideo/Site/Arte.pm \
-	lib/FlashVideo/Site/Ehow.pm \
-	blib/lib/FlashVideo/Site/Ehow.pm \
-	lib/FlashVideo/Site/Presstv.pm \
-	blib/lib/FlashVideo/Site/Presstv.pm \
-	lib/FlashVideo/Site/Channel5.pm \
-	blib/lib/FlashVideo/Site/Channel5.pm \
-	lib/FlashVideo/Site/Liveleak.pm \
-	blib/lib/FlashVideo/Site/Liveleak.pm \
-	lib/FlashVideo/Site/Flickr.pm \
-	blib/lib/FlashVideo/Site/Flickr.pm \
-	lib/FlashVideo/Site/Nicovideo.pm \
-	blib/lib/FlashVideo/Site/Nicovideo.pm \
-	lib/FlashVideo/Site/Pbs.pm \
-	blib/lib/FlashVideo/Site/Pbs.pm \
-	lib/FlashVideo/Site/Videofun.pm \
-	blib/lib/FlashVideo/Site/Videofun.pm \
-	lib/FlashVideo/Site/Mtvnservices.pm \
-	blib/lib/FlashVideo/Site/Mtvnservices.pm \
-	lib/FlashVideo/Site/Tvnz.pm \
-	blib/lib/FlashVideo/Site/Tvnz.pm \
-	lib/FlashVideo/Site/Videojug.pm \
-	blib/lib/FlashVideo/Site/Videojug.pm \
-	lib/FlashVideo/Site/Freevideo.pm \
-	blib/lib/FlashVideo/Site/Freevideo.pm \
-	lib/FlashVideo/Site/4od.pm \
-	blib/lib/FlashVideo/Site/4od.pm \
-	lib/FlashVideo/Site/Fliqz.pm \
-	blib/lib/FlashVideo/Site/Fliqz.pm \
-	lib/FlashVideo/Site/Kanal5play.pm \
-	blib/lib/FlashVideo/Site/Kanal5play.pm \
-	lib/FlashVideo/Site/Xnxx.pm \
-	blib/lib/FlashVideo/Site/Xnxx.pm \
-	lib/FlashVideo/Site/Blip.pm \
-	blib/lib/FlashVideo/Site/Blip.pm \
-	lib/FlashVideo/Site/Itv.pm \
-	blib/lib/FlashVideo/Site/Itv.pm \
-	lib/FlashVideo/Site/Sapo.pm \
-	blib/lib/FlashVideo/Site/Sapo.pm \
-	lib/FlashVideo/Site/Cultureunplugged.pm \
-	blib/lib/FlashVideo/Site/Cultureunplugged.pm \
-	lib/FlashVideo/Site/Stickam.pm \
-	blib/lib/FlashVideo/Site/Stickam.pm \
-	lib/FlashVideo/VideoPreferences/Account.pm \
-	blib/lib/FlashVideo/VideoPreferences/Account.pm \
-	lib/FlashVideo/Site/Collegehumor.pm \
+PM_TO_BLIB = lib/FlashVideo/Site/Collegehumor.pm \
 	blib/lib/FlashVideo/Site/Collegehumor.pm \
-	lib/FlashVideo/Site/Abclocal.pm \
-	blib/lib/FlashVideo/Site/Abclocal.pm \
-	lib/FlashVideo/Site/Megaporn.pm \
-	blib/lib/FlashVideo/Site/Megaporn.pm \
-	lib/FlashVideo/Site/About.pm \
-	blib/lib/FlashVideo/Site/About.pm \
-	lib/FlashVideo/Site/Movieclips.pm \
-	blib/lib/FlashVideo/Site/Movieclips.pm \
-	lib/FlashVideo/Site/Vimeo.pm \
-	blib/lib/FlashVideo/Site/Vimeo.pm \
-	lib/FlashVideo/Site/Spiegel.pm \
-	blib/lib/FlashVideo/Site/Spiegel.pm \
-	lib/FlashVideo/Site/Tv.pm \
-	blib/lib/FlashVideo/Site/Tv.pm \
-	lib/FlashVideo/Site/Video44.pm \
-	blib/lib/FlashVideo/Site/Video44.pm \
-	lib/FlashVideo/Site/Msnbc.pm \
-	blib/lib/FlashVideo/Site/Msnbc.pm \
-	lib/FlashVideo/Site/Tudou.pm \
-	blib/lib/FlashVideo/Site/Tudou.pm \
-	lib/FlashVideo/Site/Dailymotion.pm \
-	blib/lib/FlashVideo/Site/Dailymotion.pm \
-	lib/FlashVideo/Site/Amazon.pm \
-	blib/lib/FlashVideo/Site/Amazon.pm \
-	lib/FlashVideo/Site/Youtubenocookie.pm \
-	blib/lib/FlashVideo/Site/Youtubenocookie.pm \
-	lib/FlashVideo/Site/Kidswb.pm \
-	blib/lib/FlashVideo/Site/Kidswb.pm \
-	lib/FlashVideo/Site/Facebook.pm \
-	blib/lib/FlashVideo/Site/Facebook.pm \
-	lib/FlashVideo/Site/Globaltv.pm \
-	blib/lib/FlashVideo/Site/Globaltv.pm \
-	lib/FlashVideo/Site/Yourupload.pm \
-	blib/lib/FlashVideo/Site/Yourupload.pm \
-	lib/FlashVideo/Site/Break.pm \
-	blib/lib/FlashVideo/Site/Break.pm \
-	lib/FlashVideo/Site/Ctv.pm \
-	blib/lib/FlashVideo/Site/Ctv.pm \
-	lib/FlashVideo/Site/Vk.pm \
-	blib/lib/FlashVideo/Site/Vk.pm \
-	lib/FlashVideo/Site/Mofosex.pm \
-	blib/lib/FlashVideo/Site/Mofosex.pm \
-	lib/FlashVideo/Site/Youtube.pm \
-	blib/lib/FlashVideo/Site/Youtube.pm \
-	lib/FlashVideo/Site/Vitheque.pm \
-	blib/lib/FlashVideo/Site/Vitheque.pm \
 	lib/FlashVideo/Site/Seesaw.pm \
 	blib/lib/FlashVideo/Site/Seesaw.pm \
-	lib/FlashVideo/Site/Stagevu.pm \
-	blib/lib/FlashVideo/Site/Stagevu.pm \
-	lib/FlashVideo/Site/Bbc.pm \
-	blib/lib/FlashVideo/Site/Bbc.pm \
-	lib/FlashVideo/FFmpegDownloader.pm \
-	blib/lib/FlashVideo/FFmpegDownloader.pm \
-	lib/FlashVideo/Site/Zshare.pm \
-	blib/lib/FlashVideo/Site/Zshare.pm \
-	lib/FlashVideo/Site/Nasa.pm \
-	blib/lib/FlashVideo/Site/Nasa.pm \
+	lib/FlashVideo/Site/Spike.pm \
+	blib/lib/FlashVideo/Site/Spike.pm \
+	lib/FlashVideo/Site/Spiegel.pm \
+	blib/lib/FlashVideo/Site/Spiegel.pm \
+	lib/FlashVideo/Site/Nbc.pm \
+	blib/lib/FlashVideo/Site/Nbc.pm \
+	lib/FlashVideo/Site/Vk.pm \
+	blib/lib/FlashVideo/Site/Vk.pm \
+	lib/FlashVideo/Site/Nhk.pm \
+	blib/lib/FlashVideo/Site/Nhk.pm \
+	lib/FlashVideo/Site/Traileraddict.pm \
+	blib/lib/FlashVideo/Site/Traileraddict.pm \
+	lib/FlashVideo/Site/Globaltv.pm \
+	blib/lib/FlashVideo/Site/Globaltv.pm \
+	lib/FlashVideo/Site/Truveo.pm \
+	blib/lib/FlashVideo/Site/Truveo.pm \
+	lib/FlashVideo/Site/Tudou.pm \
+	blib/lib/FlashVideo/Site/Tudou.pm \
+	lib/FlashVideo/Site/Gosupark.pm \
+	blib/lib/FlashVideo/Site/Gosupark.pm \
+	lib/FlashVideo/Site/Putlocker.pm \
+	blib/lib/FlashVideo/Site/Putlocker.pm \
+	lib/FlashVideo/Site/Googlevideosearch.pm \
+	blib/lib/FlashVideo/Site/Googlevideosearch.pm \
+	lib/FlashVideo/Site/Mofosex.pm \
+	blib/lib/FlashVideo/Site/Mofosex.pm \
+	lib/FlashVideo/VideoPreferences/Quality.pm \
+	blib/lib/FlashVideo/VideoPreferences/Quality.pm \
+	lib/FlashVideo/Site/Mylifetime.pm \
+	blib/lib/FlashVideo/Site/Mylifetime.pm \
+	lib/FlashVideo/Site/Channel4.pm \
+	blib/lib/FlashVideo/Site/Channel4.pm \
+	lib/FlashVideo/Site/Tv8play.pm \
+	blib/lib/FlashVideo/Site/Tv8play.pm \
+	lib/FlashVideo/Site/Grindtv.pm \
+	blib/lib/FlashVideo/Site/Grindtv.pm \
+	lib/FlashVideo/Generic.pm \
+	blib/lib/FlashVideo/Generic.pm \
+	lib/FlashVideo/Site/Tvnz.pm \
+	blib/lib/FlashVideo/Site/Tvnz.pm \
+	lib/FlashVideo/Site/Stupidvideos.pm \
+	blib/lib/FlashVideo/Site/Stupidvideos.pm \
+	lib/FlashVideo/Site/Vimeo.pm \
+	blib/lib/FlashVideo/Site/Vimeo.pm \
+	lib/FlashVideo/Site/Sevenload.pm \
+	blib/lib/FlashVideo/Site/Sevenload.pm \
+	lib/FlashVideo/Site/Abc.pm \
+	blib/lib/FlashVideo/Site/Abc.pm \
+	lib/FlashVideo/Search.pm \
+	blib/lib/FlashVideo/Search.pm \
+	lib/FlashVideo/Site/Freevideo.pm \
+	blib/lib/FlashVideo/Site/Freevideo.pm \
+	lib/FlashVideo/Utils.pm \
+	blib/lib/FlashVideo/Utils.pm \
+	lib/FlashVideo/RTMPDownloader.pm \
+	blib/lib/FlashVideo/RTMPDownloader.pm \
+	lib/FlashVideo/Site/Last.pm \
+	blib/lib/FlashVideo/Site/Last.pm \
+	lib/FlashVideo/Site/Tva.pm \
+	blib/lib/FlashVideo/Site/Tva.pm \
+	lib/FlashVideo/Site/Presstv.pm \
+	blib/lib/FlashVideo/Site/Presstv.pm \
+	lib/FlashVideo/Site/Pbs.pm \
+	blib/lib/FlashVideo/Site/Pbs.pm \
 	lib/FlashVideo/Site/Canalvie.pm \
 	blib/lib/FlashVideo/Site/Canalvie.pm \
 	lib/FlashVideo/Site/Thirteen.pm \
 	blib/lib/FlashVideo/Site/Thirteen.pm \
-	lib/FlashVideo/Site/Truveo.pm \
-	blib/lib/FlashVideo/Site/Truveo.pm \
-	lib/FlashVideo/Site/5min.pm \
-	blib/lib/FlashVideo/Site/5min.pm \
-	lib/FlashVideo/Site/Canoe.pm \
-	blib/lib/FlashVideo/Site/Canoe.pm \
-	lib/FlashVideo/Generic.pm \
-	blib/lib/FlashVideo/Generic.pm \
-	lib/FlashVideo/Site/Tv3.pm \
-	blib/lib/FlashVideo/Site/Tv3.pm \
+	lib/FlashVideo/Site/Break.pm \
+	blib/lib/FlashVideo/Site/Break.pm \
+	lib/FlashVideo/Site/Cbs.pm \
+	blib/lib/FlashVideo/Site/Cbs.pm \
 	lib/FlashVideo/Site/Nfb.pm \
 	blib/lib/FlashVideo/Site/Nfb.pm \
-	lib/FlashVideo/Site/Svtplay.pm \
-	blib/lib/FlashVideo/Site/Svtplay.pm \
-	lib/FlashVideo/Site/Xvideos.pm \
-	blib/lib/FlashVideo/Site/Xvideos.pm \
-	lib/FlashVideo/Site/Gosupark.pm \
-	blib/lib/FlashVideo/Site/Gosupark.pm \
-	lib/FlashVideo/Site/Spike.pm \
-	blib/lib/FlashVideo/Site/Spike.pm \
-	lib/FlashVideo/Site/Filebox.pm \
-	blib/lib/FlashVideo/Site/Filebox.pm \
-	lib/FlashVideo/Site/Sevenload.pm \
-	blib/lib/FlashVideo/Site/Sevenload.pm \
-	lib/FlashVideo/Site/Scivee.pm \
-	blib/lib/FlashVideo/Site/Scivee.pm \
-	lib/FlashVideo/Site/Ringtv.pm \
-	blib/lib/FlashVideo/Site/Ringtv.pm \
-	lib/FlashVideo/Site/Metacafe.pm \
-	blib/lib/FlashVideo/Site/Metacafe.pm \
-	lib/FlashVideo/Site/Stupidvideos.pm \
-	blib/lib/FlashVideo/Site/Stupidvideos.pm \
-	lib/FlashVideo/Site/Bing.pm \
-	blib/lib/FlashVideo/Site/Bing.pm \
+	lib/FlashVideo/Site/Redbull.pm \
+	blib/lib/FlashVideo/Site/Redbull.pm \
+	lib/FlashVideo/Site/Ooyala.pm \
+	blib/lib/FlashVideo/Site/Ooyala.pm \
+	lib/FlashVideo/Site/Myvideo.pm \
+	blib/lib/FlashVideo/Site/Myvideo.pm \
+	lib/FlashVideo/Site/Techcast.pm \
+	blib/lib/FlashVideo/Site/Techcast.pm \
 	lib/FlashVideo/Site/Gamespot.pm \
 	blib/lib/FlashVideo/Site/Gamespot.pm \
-	lib/FlashVideo/Site/Tv4play.pm \
-	blib/lib/FlashVideo/Site/Tv4play.pm \
-	lib/FlashVideo/Site/Fora.pm \
-	blib/lib/FlashVideo/Site/Fora.pm \
-	lib/FlashVideo/Site/Sockshare.pm \
-	blib/lib/FlashVideo/Site/Sockshare.pm \
-	lib/FlashVideo/Site/Daum.pm \
-	blib/lib/FlashVideo/Site/Daum.pm \
-	lib/FlashVideo/Site/Munkvideo.pm \
-	blib/lib/FlashVideo/Site/Munkvideo.pm \
+	lib/FlashVideo/Site/Motherless.pm \
+	blib/lib/FlashVideo/Site/Motherless.pm \
+	lib/FlashVideo/Site/Videolectures.pm \
+	blib/lib/FlashVideo/Site/Videolectures.pm \
+	lib/FlashVideo/Site/Blip.pm \
+	blib/lib/FlashVideo/Site/Blip.pm \
+	lib/FlashVideo/Site/Nasa.pm \
+	blib/lib/FlashVideo/Site/Nasa.pm \
+	lib/FlashVideo/Site/Canoe.pm \
+	blib/lib/FlashVideo/Site/Canoe.pm \
+	lib/FlashVideo/Site/Stickam.pm \
+	blib/lib/FlashVideo/Site/Stickam.pm \
 	lib/FlashVideo/Site/Divxstage.pm \
 	blib/lib/FlashVideo/Site/Divxstage.pm \
-	lib/FlashVideo/Site/Msn.pm \
-	blib/lib/FlashVideo/Site/Msn.pm \
+	lib/FlashVideo/Site/Tv4play.pm \
+	blib/lib/FlashVideo/Site/Tv4play.pm \
+	lib/FlashVideo/Site/Ima.pm \
+	blib/lib/FlashVideo/Site/Ima.pm \
 	lib/FlashVideo/Site/Oppetarkiv.pm \
 	blib/lib/FlashVideo/Site/Oppetarkiv.pm \
-	lib/FlashVideo/Site/Mylifetime.pm \
-	blib/lib/FlashVideo/Site/Mylifetime.pm \
+	lib/FlashVideo/Site/Cbsnews.pm \
+	blib/lib/FlashVideo/Site/Cbsnews.pm \
+	lib/FlashVideo/Site/Redtube.pm \
+	blib/lib/FlashVideo/Site/Redtube.pm \
+	lib/FlashVideo/Site/Abclocal.pm \
+	blib/lib/FlashVideo/Site/Abclocal.pm \
+	lib/FlashVideo/Site/Starwars.pm \
+	blib/lib/FlashVideo/Site/Starwars.pm \
+	lib/FlashVideo/Site/Pennyarcade.pm \
+	blib/lib/FlashVideo/Site/Pennyarcade.pm \
+	lib/FlashVideo/Site/Apple.pm \
+	blib/lib/FlashVideo/Site/Apple.pm \
+	lib/FlashVideo/Site/Yourupload.pm \
+	blib/lib/FlashVideo/Site/Yourupload.pm \
+	lib/FlashVideo/Site/Xhamster.pm \
+	blib/lib/FlashVideo/Site/Xhamster.pm \
+	lib/FlashVideo/Site/Tv3play.pm \
+	blib/lib/FlashVideo/Site/Tv3play.pm \
+	lib/FlashVideo/VideoPreferences.pm \
+	blib/lib/FlashVideo/VideoPreferences.pm \
+	lib/FlashVideo/FFmpegDownloader.pm \
+	blib/lib/FlashVideo/FFmpegDownloader.pm \
+	lib/FlashVideo/Site/Liveleak.pm \
+	blib/lib/FlashVideo/Site/Liveleak.pm \
+	lib/FlashVideo/Site/Vitheque.pm \
+	blib/lib/FlashVideo/Site/Vitheque.pm \
+	lib/FlashVideo/Site/Wat.pm \
+	blib/lib/FlashVideo/Site/Wat.pm \
+	lib/FlashVideo/Site/Expertvillage.pm \
+	blib/lib/FlashVideo/Site/Expertvillage.pm \
+	lib/FlashVideo/Site/Vkontakte.pm \
+	blib/lib/FlashVideo/Site/Vkontakte.pm \
+	lib/FlashVideo/Site/Ardmediathek.pm \
+	blib/lib/FlashVideo/Site/Ardmediathek.pm \
+	lib/FlashVideo/Site/Metacafe.pm \
+	blib/lib/FlashVideo/Site/Metacafe.pm \
+	lib/FlashVideo/Site/Youku.pm \
+	blib/lib/FlashVideo/Site/Youku.pm \
+	lib/FlashVideo/Site/Mitworld.pm \
+	blib/lib/FlashVideo/Site/Mitworld.pm \
+	lib/FlashVideo/Site/Scivee.pm \
+	blib/lib/FlashVideo/Site/Scivee.pm \
+	lib/FlashVideo/Site/4od.pm \
+	blib/lib/FlashVideo/Site/4od.pm \
+	lib/FlashVideo/Site/Video44.pm \
+	blib/lib/FlashVideo/Site/Video44.pm \
+	lib/FlashVideo/Site/Google.pm \
+	blib/lib/FlashVideo/Site/Google.pm \
+	lib/FlashVideo/Site/Sapo.pm \
+	blib/lib/FlashVideo/Site/Sapo.pm \
+	lib/FlashVideo/Site/Kidswb.pm \
+	blib/lib/FlashVideo/Site/Kidswb.pm \
+	lib/FlashVideo/Downloader.pm \
+	blib/lib/FlashVideo/Downloader.pm \
+	lib/FlashVideo/Site/Megavideo.pm \
+	blib/lib/FlashVideo/Site/Megavideo.pm \
+	lib/FlashVideo/Site/Sockshare.pm \
+	blib/lib/FlashVideo/Site/Sockshare.pm \
+	lib/FlashVideo/Site/Adultswim.pm \
+	blib/lib/FlashVideo/Site/Adultswim.pm \
+	lib/FlashVideo/Site/Itv.pm \
+	blib/lib/FlashVideo/Site/Itv.pm \
+	lib/FlashVideo/Site.pm \
+	blib/lib/FlashVideo/Site.pm \
+	lib/FlashVideo/Site/Todaysbigthing.pm \
+	blib/lib/FlashVideo/Site/Todaysbigthing.pm \
+	lib/FlashVideo/Site/Mtvnservices.pm \
+	blib/lib/FlashVideo/Site/Mtvnservices.pm \
+	lib/FlashVideo/Site/Bing.pm \
+	blib/lib/FlashVideo/Site/Bing.pm \
+	lib/FlashVideo/Site/About.pm \
+	blib/lib/FlashVideo/Site/About.pm \
+	lib/FlashVideo/Site/Arte.pm \
+	blib/lib/FlashVideo/Site/Arte.pm \
+	lib/FlashVideo/Site/Msn.pm \
+	blib/lib/FlashVideo/Site/Msn.pm \
+	lib/FlashVideo/Site/Theonion.pm \
+	blib/lib/FlashVideo/Site/Theonion.pm \
+	lib/FlashVideo/Site/Sbs.pm \
+	blib/lib/FlashVideo/Site/Sbs.pm \
+	lib/FlashVideo/Site/Tv.pm \
+	blib/lib/FlashVideo/Site/Tv.pm \
+	lib/FlashVideo/Site/Facebook.pm \
+	blib/lib/FlashVideo/Site/Facebook.pm \
+	lib/FlashVideo/Site/Channel5.pm \
+	blib/lib/FlashVideo/Site/Channel5.pm \
+	lib/FlashVideo/Site/Aniboom.pm \
+	blib/lib/FlashVideo/Site/Aniboom.pm \
+	lib/FlashVideo/Site/Amazon.pm \
+	blib/lib/FlashVideo/Site/Amazon.pm \
+	lib/FlashVideo/Site/Nick.pm \
+	blib/lib/FlashVideo/Site/Nick.pm \
+	lib/FlashVideo/Site/Kanal5play.pm \
+	blib/lib/FlashVideo/Site/Kanal5play.pm \
+	lib/FlashVideo/Site/Msnbc.pm \
+	blib/lib/FlashVideo/Site/Msnbc.pm \
+	lib/FlashVideo/Site/Gorillavid.pm \
+	blib/lib/FlashVideo/Site/Gorillavid.pm \
+	lib/FlashVideo/Site/Brightcove.pm \
+	blib/lib/FlashVideo/Site/Brightcove.pm \
+	lib/FlashVideo/Site/Tv3.pm \
+	blib/lib/FlashVideo/Site/Tv3.pm \
+	lib/FlashVideo/Site/Ctv.pm \
+	blib/lib/FlashVideo/Site/Ctv.pm \
+	lib/FlashVideo/Site/5min.pm \
+	blib/lib/FlashVideo/Site/5min.pm \
+	lib/FlashVideo/Site/Daum.pm \
+	blib/lib/FlashVideo/Site/Daum.pm \
+	lib/FlashVideo/Site/Muzu.pm \
+	blib/lib/FlashVideo/Site/Muzu.pm \
+	lib/FlashVideo/Site/Videobb.pm \
+	blib/lib/FlashVideo/Site/Videobb.pm \
+	lib/FlashVideo/Site/Videojug.pm \
+	blib/lib/FlashVideo/Site/Videojug.pm \
+	lib/FlashVideo/Site/Ehow.pm \
+	blib/lib/FlashVideo/Site/Ehow.pm \
+	lib/FlashVideo/Site/Cultureunplugged.pm \
+	blib/lib/FlashVideo/Site/Cultureunplugged.pm \
+	lib/FlashVideo/Site/Slashcontrol.pm \
+	blib/lib/FlashVideo/Site/Slashcontrol.pm \
+	lib/FlashVideo/Site/Cartoonnetwork.pm \
+	blib/lib/FlashVideo/Site/Cartoonnetwork.pm \
+	lib/FlashVideo/Site/Joemonster.pm \
+	blib/lib/FlashVideo/Site/Joemonster.pm \
+	lib/FlashVideo/URLFinder.pm \
+	blib/lib/FlashVideo/URLFinder.pm \
+	lib/FlashVideo/Site/Stagevu.pm \
+	blib/lib/FlashVideo/Site/Stagevu.pm \
+	lib/FlashVideo/Site/Youtubenocookie.pm \
+	blib/lib/FlashVideo/Site/Youtubenocookie.pm \
+	lib/FlashVideo/Site/Tou.pm \
+	blib/lib/FlashVideo/Site/Tou.pm \
+	lib/FlashVideo/Site/Pinkbike.pm \
+	blib/lib/FlashVideo/Site/Pinkbike.pm \
+	lib/FlashVideo/Site/Tv6play.pm \
+	blib/lib/FlashVideo/Site/Tv6play.pm \
+	lib/FlashVideo/Site/Bbc.pm \
+	blib/lib/FlashVideo/Site/Bbc.pm \
+	lib/FlashVideo/VideoPreferences/Account.pm \
+	blib/lib/FlashVideo/VideoPreferences/Account.pm \
+	lib/FlashVideo/Site/Zdf.pm \
+	blib/lib/FlashVideo/Site/Zdf.pm \
+	lib/FlashVideo/Site/Youtube.pm \
+	blib/lib/FlashVideo/Site/Youtube.pm \
+	lib/FlashVideo/Site/Nicovideo.pm \
+	blib/lib/FlashVideo/Site/Nicovideo.pm \
+	lib/FlashVideo/Site/Ted.pm \
+	blib/lib/FlashVideo/Site/Ted.pm \
+	lib/FlashVideo/Site/Cnet.pm \
+	blib/lib/FlashVideo/Site/Cnet.pm \
+	lib/FlashVideo/Site/Gawker.pm \
+	blib/lib/FlashVideo/Site/Gawker.pm \
+	lib/FlashVideo/Site/Filebox.pm \
+	blib/lib/FlashVideo/Site/Filebox.pm \
+	lib/FlashVideo/Site/Megaporn.pm \
+	blib/lib/FlashVideo/Site/Megaporn.pm \
+	lib/FlashVideo/Site/Ringtv.pm \
+	blib/lib/FlashVideo/Site/Ringtv.pm \
+	lib/FlashVideo/Site/Dailymotion.pm \
+	blib/lib/FlashVideo/Site/Dailymotion.pm \
 	lib/FlashVideo/JSON.pm \
 	blib/lib/FlashVideo/JSON.pm \
 	lib/FlashVideo/Site/Youtu.pm \
 	blib/lib/FlashVideo/Site/Youtu.pm \
-	lib/FlashVideo/Site/Cbsnews.pm \
-	blib/lib/FlashVideo/Site/Cbsnews.pm \
-	lib/FlashVideo/Site/Pennyarcade.pm \
-	blib/lib/FlashVideo/Site/Pennyarcade.pm \
-	lib/FlashVideo/Site/Videobb.pm \
-	blib/lib/FlashVideo/Site/Videobb.pm \
+	lib/FlashVideo/Site/Fora.pm \
+	blib/lib/FlashVideo/Site/Fora.pm \
 	lib/FlashVideo/Mechanize.pm \
 	blib/lib/FlashVideo/Mechanize.pm \
-	lib/FlashVideo/Site/Nick.pm \
-	blib/lib/FlashVideo/Site/Nick.pm \
-	lib/FlashVideo/Site/Tva.pm \
-	blib/lib/FlashVideo/Site/Tva.pm \
-	lib/FlashVideo/Site/Vidzur.pm \
-	blib/lib/FlashVideo/Site/Vidzur.pm \
-	lib/FlashVideo/Site/Google.pm \
-	blib/lib/FlashVideo/Site/Google.pm \
-	lib/FlashVideo/Site/Redtube.pm \
-	blib/lib/FlashVideo/Site/Redtube.pm \
-	lib/FlashVideo/Site/Ima.pm \
-	blib/lib/FlashVideo/Site/Ima.pm \
-	lib/FlashVideo/Site/Expertvillage.pm \
-	blib/lib/FlashVideo/Site/Expertvillage.pm \
-	lib/FlashVideo/RTMPDownloader.pm \
-	blib/lib/FlashVideo/RTMPDownloader.pm \
-	lib/FlashVideo/Site/Tv3play.pm \
-	blib/lib/FlashVideo/Site/Tv3play.pm \
-	lib/FlashVideo/Site/Xhamster.pm \
-	blib/lib/FlashVideo/Site/Xhamster.pm \
-	lib/FlashVideo/Site/Starwars.pm \
-	blib/lib/FlashVideo/Site/Starwars.pm \
-	lib/FlashVideo/Search.pm \
-	blib/lib/FlashVideo/Search.pm \
-	lib/FlashVideo/VideoPreferences/Quality.pm \
-	blib/lib/FlashVideo/VideoPreferences/Quality.pm \
-	lib/FlashVideo/Site/Youku.pm \
-	blib/lib/FlashVideo/Site/Youku.pm \
-	lib/FlashVideo/Site/Tv8play.pm \
-	blib/lib/FlashVideo/Site/Tv8play.pm \
-	lib/FlashVideo/Site/Muzu.pm \
-	blib/lib/FlashVideo/Site/Muzu.pm \
-	lib/FlashVideo/Site/Traileraddict.pm \
-	blib/lib/FlashVideo/Site/Traileraddict.pm \
-	lib/FlashVideo/Site/Nhk.pm \
-	blib/lib/FlashVideo/Site/Nhk.pm \
-	lib/FlashVideo/Site/Gorillavid.pm \
-	blib/lib/FlashVideo/Site/Gorillavid.pm \
-	lib/FlashVideo/Site/Theonion.pm \
-	blib/lib/FlashVideo/Site/Theonion.pm \
-	lib/FlashVideo/Site/Motherless.pm \
-	blib/lib/FlashVideo/Site/Motherless.pm \
-	lib/FlashVideo/Site/Zdf.pm \
-	blib/lib/FlashVideo/Site/Zdf.pm \
-	lib/FlashVideo/Site/Cbs.pm \
-	blib/lib/FlashVideo/Site/Cbs.pm \
-	lib/FlashVideo/Site/Abc.pm \
-	blib/lib/FlashVideo/Site/Abc.pm \
-	lib/FlashVideo/Site/Nbc.pm \
-	blib/lib/FlashVideo/Site/Nbc.pm \
-	lib/FlashVideo/Site/Tou.pm \
-	blib/lib/FlashVideo/Site/Tou.pm \
-	lib/FlashVideo/Site/Myvideo.pm \
-	blib/lib/FlashVideo/Site/Myvideo.pm \
-	lib/FlashVideo/Utils.pm \
-	blib/lib/FlashVideo/Utils.pm \
-	lib/FlashVideo/Site/Mitworld.pm \
-	blib/lib/FlashVideo/Site/Mitworld.pm \
-	lib/FlashVideo/Site/Ted.pm \
-	blib/lib/FlashVideo/Site/Ted.pm \
-	lib/FlashVideo/Site/Putlocker.pm \
-	blib/lib/FlashVideo/Site/Putlocker.pm \
-	lib/FlashVideo/Site/Ardmediathek.pm \
-	blib/lib/FlashVideo/Site/Ardmediathek.pm \
-	lib/FlashVideo/Site/Googlevideosearch.pm \
-	blib/lib/FlashVideo/Site/Googlevideosearch.pm \
-	lib/FlashVideo/Site/Vrak.pm \
-	blib/lib/FlashVideo/Site/Vrak.pm \
-	lib/FlashVideo/Site/Wat.pm \
-	blib/lib/FlashVideo/Site/Wat.pm \
-	lib/FlashVideo/Site/Pinkbike.pm \
-	blib/lib/FlashVideo/Site/Pinkbike.pm \
 	lib/FlashVideo/Site/Tbs.pm \
 	blib/lib/FlashVideo/Site/Tbs.pm \
-	lib/FlashVideo/Site/Brightcove.pm \
-	blib/lib/FlashVideo/Site/Brightcove.pm \
-	lib/FlashVideo/Site/Grindtv.pm \
-	blib/lib/FlashVideo/Site/Grindtv.pm \
-	lib/FlashVideo/Site/Sbs.pm \
-	blib/lib/FlashVideo/Site/Sbs.pm \
+	lib/FlashVideo/Site/Zshare.pm \
+	blib/lib/FlashVideo/Site/Zshare.pm \
+	lib/FlashVideo/Site/Vidzur.pm \
+	blib/lib/FlashVideo/Site/Vidzur.pm \
+	lib/FlashVideo/Site/Vrak.pm \
+	blib/lib/FlashVideo/Site/Vrak.pm \
+	lib/FlashVideo/Site/Movieclips.pm \
+	blib/lib/FlashVideo/Site/Movieclips.pm \
+	lib/FlashVideo/Site/Svtplay.pm \
+	blib/lib/FlashVideo/Site/Svtplay.pm \
+	lib/FlashVideo/Site/Flickr.pm \
+	blib/lib/FlashVideo/Site/Flickr.pm \
+	lib/FlashVideo/Site/Videofun.pm \
+	blib/lib/FlashVideo/Site/Videofun.pm \
+	lib/FlashVideo/Site/Xnxx.pm \
+	blib/lib/FlashVideo/Site/Xnxx.pm \
+	lib/FlashVideo/Site/Escapistmagazine.pm \
+	blib/lib/FlashVideo/Site/Escapistmagazine.pm \
+	lib/FlashVideo/Site/Fliqz.pm \
+	blib/lib/FlashVideo/Site/Fliqz.pm \
+	lib/FlashVideo/Site/Xvideos.pm \
+	blib/lib/FlashVideo/Site/Xvideos.pm \
+	lib/FlashVideo/Site/Munkvideo.pm \
+	blib/lib/FlashVideo/Site/Munkvideo.pm \
 	lib/FlashVideo/Site/Ustream.pm \
-	blib/lib/FlashVideo/Site/Ustream.pm \
-	lib/FlashVideo/VideoPreferences.pm \
-	blib/lib/FlashVideo/VideoPreferences.pm \
-	lib/FlashVideo/Site/Last.pm \
-	blib/lib/FlashVideo/Site/Last.pm \
-	lib/FlashVideo/Site/Apple.pm \
-	blib/lib/FlashVideo/Site/Apple.pm \
-	lib/FlashVideo/Site/Ooyala.pm \
-	blib/lib/FlashVideo/Site/Ooyala.pm
+	blib/lib/FlashVideo/Site/Ustream.pm
 
 
 # --- MakeMaker platform_constants section:
@@ -919,22 +919,22 @@ clean_subdirs :
 
 clean :: clean_subdirs
 	- $(RM_F) \
-	  core.[0-9][0-9][0-9][0-9] core.[0-9][0-9][0-9][0-9][0-9] \
-	  $(INST_ARCHAUTODIR)/extralibs.ld blibdirs.ts \
-	  *perl.core pm_to_blib.ts \
-	  perl.exe $(BOOTSTRAP) \
-	  $(BASEEXT).bso $(MAKE_APERL_FILE) \
-	  so_locations core.[0-9][0-9][0-9] \
-	  *$(OBJ_EXT) $(BASEEXT).def \
-	  MYMETA.yml lib$(BASEEXT).def \
-	  $(INST_ARCHAUTODIR)/extralibs.all perlmain.c \
-	  $(BASEEXT).x core.[0-9] \
-	  MYMETA.json tmon.out \
-	  *$(LIB_EXT) mon.out \
-	  pm_to_blib core \
-	  core.[0-9][0-9] core.*perl.*.? \
-	  $(BASEEXT).exp perl \
-	  perl$(EXE_EXT) 
+	  perl.exe perl \
+	  core.*perl.*.? perl$(EXE_EXT) \
+	  lib$(BASEEXT).def MYMETA.json \
+	  core.[0-9][0-9][0-9] *$(LIB_EXT) \
+	  $(MAKE_APERL_FILE) core.[0-9] \
+	  $(BOOTSTRAP) core.[0-9][0-9][0-9][0-9] \
+	  $(BASEEXT).exp $(BASEEXT).def \
+	  so_locations blibdirs.ts \
+	  $(INST_ARCHAUTODIR)/extralibs.ld core \
+	  $(BASEEXT).bso MYMETA.yml \
+	  tmon.out pm_to_blib.ts \
+	  core.[0-9][0-9][0-9][0-9][0-9] *$(OBJ_EXT) \
+	  *perl.core $(BASEEXT).x \
+	  $(INST_ARCHAUTODIR)/extralibs.all core.[0-9][0-9] \
+	  perlmain.c mon.out \
+	  pm_to_blib 
 	- $(RM_RF) \
 	  blib 
 	- $(MV) $(FIRST_MAKEFILE) $(MAKEFILE_OLD) $(DEV_NULL)
@@ -949,7 +949,7 @@ realclean_subdirs :
 # Delete temporary files (via clean) and also delete dist files
 realclean purge ::  clean realclean_subdirs
 	- $(RM_F) \
-	  $(FIRST_MAKEFILE) $(MAKEFILE_OLD) 
+	  $(MAKEFILE_OLD) $(FIRST_MAKEFILE) 
 	- $(RM_RF) \
 	  $(DISTVNAME) 
 
@@ -1343,161 +1343,161 @@ ppd :
 
 pm_to_blib : $(FIRST_MAKEFILE) $(TO_INST_PM)
 	$(NOECHO) $(ABSPERLRUN) -MExtUtils::Install -e 'pm_to_blib({@ARGV}, '\''$(INST_LIB)/auto'\'', q[$(PM_FILTER)], '\''$(PERM_DIR)'\'')' -- \
-	  lib/FlashVideo/Site/Cartoonnetwork.pm blib/lib/FlashVideo/Site/Cartoonnetwork.pm \
-	  lib/FlashVideo/Site/Vkontakte.pm blib/lib/FlashVideo/Site/Vkontakte.pm \
-	  lib/FlashVideo/URLFinder.pm blib/lib/FlashVideo/URLFinder.pm \
-	  lib/FlashVideo/Site/Slashcontrol.pm blib/lib/FlashVideo/Site/Slashcontrol.pm \
-	  lib/FlashVideo/Site/Adultswim.pm blib/lib/FlashVideo/Site/Adultswim.pm \
-	  lib/FlashVideo/Downloader.pm blib/lib/FlashVideo/Downloader.pm \
-	  lib/FlashVideo/Site/Cnet.pm blib/lib/FlashVideo/Site/Cnet.pm \
-	  lib/FlashVideo/Site.pm blib/lib/FlashVideo/Site.pm \
-	  lib/FlashVideo/Site/Joemonster.pm blib/lib/FlashVideo/Site/Joemonster.pm \
-	  lib/FlashVideo/Site/Videolectures.pm blib/lib/FlashVideo/Site/Videolectures.pm \
-	  lib/FlashVideo/Site/Todaysbigthing.pm blib/lib/FlashVideo/Site/Todaysbigthing.pm \
-	  lib/FlashVideo/Site/Tv6play.pm blib/lib/FlashVideo/Site/Tv6play.pm \
-	  lib/FlashVideo/Site/Redbull.pm blib/lib/FlashVideo/Site/Redbull.pm \
-	  lib/FlashVideo/Site/Techcast.pm blib/lib/FlashVideo/Site/Techcast.pm \
-	  lib/FlashVideo/Site/Escapistmagazine.pm blib/lib/FlashVideo/Site/Escapistmagazine.pm \
-	  lib/FlashVideo/Site/Megavideo.pm blib/lib/FlashVideo/Site/Megavideo.pm \
-	  lib/FlashVideo/Site/Aniboom.pm blib/lib/FlashVideo/Site/Aniboom.pm \
-	  lib/FlashVideo/Site/Gawker.pm blib/lib/FlashVideo/Site/Gawker.pm \
-	  lib/FlashVideo/Site/Channel4.pm blib/lib/FlashVideo/Site/Channel4.pm \
-	  lib/FlashVideo/Site/Arte.pm blib/lib/FlashVideo/Site/Arte.pm \
-	  lib/FlashVideo/Site/Ehow.pm blib/lib/FlashVideo/Site/Ehow.pm \
-	  lib/FlashVideo/Site/Presstv.pm blib/lib/FlashVideo/Site/Presstv.pm \
-	  lib/FlashVideo/Site/Channel5.pm blib/lib/FlashVideo/Site/Channel5.pm \
-	  lib/FlashVideo/Site/Liveleak.pm blib/lib/FlashVideo/Site/Liveleak.pm \
-	  lib/FlashVideo/Site/Flickr.pm blib/lib/FlashVideo/Site/Flickr.pm \
-	  lib/FlashVideo/Site/Nicovideo.pm blib/lib/FlashVideo/Site/Nicovideo.pm \
-	  lib/FlashVideo/Site/Pbs.pm blib/lib/FlashVideo/Site/Pbs.pm \
-	  lib/FlashVideo/Site/Videofun.pm blib/lib/FlashVideo/Site/Videofun.pm \
-	  lib/FlashVideo/Site/Mtvnservices.pm blib/lib/FlashVideo/Site/Mtvnservices.pm \
-	  lib/FlashVideo/Site/Tvnz.pm blib/lib/FlashVideo/Site/Tvnz.pm \
-	  lib/FlashVideo/Site/Videojug.pm blib/lib/FlashVideo/Site/Videojug.pm \
-	  lib/FlashVideo/Site/Freevideo.pm blib/lib/FlashVideo/Site/Freevideo.pm \
-	  lib/FlashVideo/Site/4od.pm blib/lib/FlashVideo/Site/4od.pm \
-	  lib/FlashVideo/Site/Fliqz.pm blib/lib/FlashVideo/Site/Fliqz.pm \
-	  lib/FlashVideo/Site/Kanal5play.pm blib/lib/FlashVideo/Site/Kanal5play.pm \
-	  lib/FlashVideo/Site/Xnxx.pm blib/lib/FlashVideo/Site/Xnxx.pm \
-	  lib/FlashVideo/Site/Blip.pm blib/lib/FlashVideo/Site/Blip.pm \
-	  lib/FlashVideo/Site/Itv.pm blib/lib/FlashVideo/Site/Itv.pm 
-	$(NOECHO) $(ABSPERLRUN) -MExtUtils::Install -e 'pm_to_blib({@ARGV}, '\''$(INST_LIB)/auto'\'', q[$(PM_FILTER)], '\''$(PERM_DIR)'\'')' -- \
-	  lib/FlashVideo/Site/Sapo.pm blib/lib/FlashVideo/Site/Sapo.pm \
-	  lib/FlashVideo/Site/Cultureunplugged.pm blib/lib/FlashVideo/Site/Cultureunplugged.pm \
-	  lib/FlashVideo/Site/Stickam.pm blib/lib/FlashVideo/Site/Stickam.pm \
-	  lib/FlashVideo/VideoPreferences/Account.pm blib/lib/FlashVideo/VideoPreferences/Account.pm \
 	  lib/FlashVideo/Site/Collegehumor.pm blib/lib/FlashVideo/Site/Collegehumor.pm \
-	  lib/FlashVideo/Site/Abclocal.pm blib/lib/FlashVideo/Site/Abclocal.pm \
-	  lib/FlashVideo/Site/Megaporn.pm blib/lib/FlashVideo/Site/Megaporn.pm \
-	  lib/FlashVideo/Site/About.pm blib/lib/FlashVideo/Site/About.pm \
-	  lib/FlashVideo/Site/Movieclips.pm blib/lib/FlashVideo/Site/Movieclips.pm \
-	  lib/FlashVideo/Site/Vimeo.pm blib/lib/FlashVideo/Site/Vimeo.pm \
-	  lib/FlashVideo/Site/Spiegel.pm blib/lib/FlashVideo/Site/Spiegel.pm \
-	  lib/FlashVideo/Site/Tv.pm blib/lib/FlashVideo/Site/Tv.pm \
-	  lib/FlashVideo/Site/Video44.pm blib/lib/FlashVideo/Site/Video44.pm \
-	  lib/FlashVideo/Site/Msnbc.pm blib/lib/FlashVideo/Site/Msnbc.pm \
-	  lib/FlashVideo/Site/Tudou.pm blib/lib/FlashVideo/Site/Tudou.pm \
-	  lib/FlashVideo/Site/Dailymotion.pm blib/lib/FlashVideo/Site/Dailymotion.pm \
-	  lib/FlashVideo/Site/Amazon.pm blib/lib/FlashVideo/Site/Amazon.pm \
-	  lib/FlashVideo/Site/Youtubenocookie.pm blib/lib/FlashVideo/Site/Youtubenocookie.pm \
-	  lib/FlashVideo/Site/Kidswb.pm blib/lib/FlashVideo/Site/Kidswb.pm \
-	  lib/FlashVideo/Site/Facebook.pm blib/lib/FlashVideo/Site/Facebook.pm \
-	  lib/FlashVideo/Site/Globaltv.pm blib/lib/FlashVideo/Site/Globaltv.pm \
-	  lib/FlashVideo/Site/Yourupload.pm blib/lib/FlashVideo/Site/Yourupload.pm \
-	  lib/FlashVideo/Site/Break.pm blib/lib/FlashVideo/Site/Break.pm \
-	  lib/FlashVideo/Site/Ctv.pm blib/lib/FlashVideo/Site/Ctv.pm \
-	  lib/FlashVideo/Site/Vk.pm blib/lib/FlashVideo/Site/Vk.pm \
-	  lib/FlashVideo/Site/Mofosex.pm blib/lib/FlashVideo/Site/Mofosex.pm \
-	  lib/FlashVideo/Site/Youtube.pm blib/lib/FlashVideo/Site/Youtube.pm \
-	  lib/FlashVideo/Site/Vitheque.pm blib/lib/FlashVideo/Site/Vitheque.pm \
 	  lib/FlashVideo/Site/Seesaw.pm blib/lib/FlashVideo/Site/Seesaw.pm \
-	  lib/FlashVideo/Site/Stagevu.pm blib/lib/FlashVideo/Site/Stagevu.pm \
-	  lib/FlashVideo/Site/Bbc.pm blib/lib/FlashVideo/Site/Bbc.pm \
-	  lib/FlashVideo/FFmpegDownloader.pm blib/lib/FlashVideo/FFmpegDownloader.pm \
-	  lib/FlashVideo/Site/Zshare.pm blib/lib/FlashVideo/Site/Zshare.pm \
-	  lib/FlashVideo/Site/Nasa.pm blib/lib/FlashVideo/Site/Nasa.pm \
+	  lib/FlashVideo/Site/Spike.pm blib/lib/FlashVideo/Site/Spike.pm \
+	  lib/FlashVideo/Site/Spiegel.pm blib/lib/FlashVideo/Site/Spiegel.pm \
+	  lib/FlashVideo/Site/Nbc.pm blib/lib/FlashVideo/Site/Nbc.pm \
+	  lib/FlashVideo/Site/Vk.pm blib/lib/FlashVideo/Site/Vk.pm \
+	  lib/FlashVideo/Site/Nhk.pm blib/lib/FlashVideo/Site/Nhk.pm \
+	  lib/FlashVideo/Site/Traileraddict.pm blib/lib/FlashVideo/Site/Traileraddict.pm \
+	  lib/FlashVideo/Site/Globaltv.pm blib/lib/FlashVideo/Site/Globaltv.pm \
+	  lib/FlashVideo/Site/Truveo.pm blib/lib/FlashVideo/Site/Truveo.pm \
+	  lib/FlashVideo/Site/Tudou.pm blib/lib/FlashVideo/Site/Tudou.pm \
+	  lib/FlashVideo/Site/Gosupark.pm blib/lib/FlashVideo/Site/Gosupark.pm \
+	  lib/FlashVideo/Site/Putlocker.pm blib/lib/FlashVideo/Site/Putlocker.pm \
+	  lib/FlashVideo/Site/Googlevideosearch.pm blib/lib/FlashVideo/Site/Googlevideosearch.pm \
+	  lib/FlashVideo/Site/Mofosex.pm blib/lib/FlashVideo/Site/Mofosex.pm \
+	  lib/FlashVideo/VideoPreferences/Quality.pm blib/lib/FlashVideo/VideoPreferences/Quality.pm \
+	  lib/FlashVideo/Site/Mylifetime.pm blib/lib/FlashVideo/Site/Mylifetime.pm \
+	  lib/FlashVideo/Site/Channel4.pm blib/lib/FlashVideo/Site/Channel4.pm \
+	  lib/FlashVideo/Site/Tv8play.pm blib/lib/FlashVideo/Site/Tv8play.pm \
+	  lib/FlashVideo/Site/Grindtv.pm blib/lib/FlashVideo/Site/Grindtv.pm \
+	  lib/FlashVideo/Generic.pm blib/lib/FlashVideo/Generic.pm \
+	  lib/FlashVideo/Site/Tvnz.pm blib/lib/FlashVideo/Site/Tvnz.pm \
+	  lib/FlashVideo/Site/Stupidvideos.pm blib/lib/FlashVideo/Site/Stupidvideos.pm \
+	  lib/FlashVideo/Site/Vimeo.pm blib/lib/FlashVideo/Site/Vimeo.pm \
+	  lib/FlashVideo/Site/Sevenload.pm blib/lib/FlashVideo/Site/Sevenload.pm \
+	  lib/FlashVideo/Site/Abc.pm blib/lib/FlashVideo/Site/Abc.pm \
+	  lib/FlashVideo/Search.pm blib/lib/FlashVideo/Search.pm \
+	  lib/FlashVideo/Site/Freevideo.pm blib/lib/FlashVideo/Site/Freevideo.pm \
+	  lib/FlashVideo/Utils.pm blib/lib/FlashVideo/Utils.pm \
+	  lib/FlashVideo/RTMPDownloader.pm blib/lib/FlashVideo/RTMPDownloader.pm \
+	  lib/FlashVideo/Site/Last.pm blib/lib/FlashVideo/Site/Last.pm \
+	  lib/FlashVideo/Site/Tva.pm blib/lib/FlashVideo/Site/Tva.pm \
+	  lib/FlashVideo/Site/Presstv.pm blib/lib/FlashVideo/Site/Presstv.pm \
+	  lib/FlashVideo/Site/Pbs.pm blib/lib/FlashVideo/Site/Pbs.pm \
 	  lib/FlashVideo/Site/Canalvie.pm blib/lib/FlashVideo/Site/Canalvie.pm \
 	  lib/FlashVideo/Site/Thirteen.pm blib/lib/FlashVideo/Site/Thirteen.pm \
-	  lib/FlashVideo/Site/Truveo.pm blib/lib/FlashVideo/Site/Truveo.pm \
-	  lib/FlashVideo/Site/5min.pm blib/lib/FlashVideo/Site/5min.pm 
+	  lib/FlashVideo/Site/Break.pm blib/lib/FlashVideo/Site/Break.pm \
+	  lib/FlashVideo/Site/Cbs.pm blib/lib/FlashVideo/Site/Cbs.pm \
+	  lib/FlashVideo/Site/Nfb.pm blib/lib/FlashVideo/Site/Nfb.pm 
 	$(NOECHO) $(ABSPERLRUN) -MExtUtils::Install -e 'pm_to_blib({@ARGV}, '\''$(INST_LIB)/auto'\'', q[$(PM_FILTER)], '\''$(PERM_DIR)'\'')' -- \
-	  lib/FlashVideo/Site/Canoe.pm blib/lib/FlashVideo/Site/Canoe.pm \
-	  lib/FlashVideo/Generic.pm blib/lib/FlashVideo/Generic.pm \
-	  lib/FlashVideo/Site/Tv3.pm blib/lib/FlashVideo/Site/Tv3.pm \
-	  lib/FlashVideo/Site/Nfb.pm blib/lib/FlashVideo/Site/Nfb.pm \
-	  lib/FlashVideo/Site/Svtplay.pm blib/lib/FlashVideo/Site/Svtplay.pm \
-	  lib/FlashVideo/Site/Xvideos.pm blib/lib/FlashVideo/Site/Xvideos.pm \
-	  lib/FlashVideo/Site/Gosupark.pm blib/lib/FlashVideo/Site/Gosupark.pm \
-	  lib/FlashVideo/Site/Spike.pm blib/lib/FlashVideo/Site/Spike.pm \
-	  lib/FlashVideo/Site/Filebox.pm blib/lib/FlashVideo/Site/Filebox.pm \
-	  lib/FlashVideo/Site/Sevenload.pm blib/lib/FlashVideo/Site/Sevenload.pm \
-	  lib/FlashVideo/Site/Scivee.pm blib/lib/FlashVideo/Site/Scivee.pm \
-	  lib/FlashVideo/Site/Ringtv.pm blib/lib/FlashVideo/Site/Ringtv.pm \
-	  lib/FlashVideo/Site/Metacafe.pm blib/lib/FlashVideo/Site/Metacafe.pm \
-	  lib/FlashVideo/Site/Stupidvideos.pm blib/lib/FlashVideo/Site/Stupidvideos.pm \
-	  lib/FlashVideo/Site/Bing.pm blib/lib/FlashVideo/Site/Bing.pm \
+	  lib/FlashVideo/Site/Redbull.pm blib/lib/FlashVideo/Site/Redbull.pm \
+	  lib/FlashVideo/Site/Ooyala.pm blib/lib/FlashVideo/Site/Ooyala.pm \
+	  lib/FlashVideo/Site/Myvideo.pm blib/lib/FlashVideo/Site/Myvideo.pm \
+	  lib/FlashVideo/Site/Techcast.pm blib/lib/FlashVideo/Site/Techcast.pm \
 	  lib/FlashVideo/Site/Gamespot.pm blib/lib/FlashVideo/Site/Gamespot.pm \
-	  lib/FlashVideo/Site/Tv4play.pm blib/lib/FlashVideo/Site/Tv4play.pm \
-	  lib/FlashVideo/Site/Fora.pm blib/lib/FlashVideo/Site/Fora.pm \
-	  lib/FlashVideo/Site/Sockshare.pm blib/lib/FlashVideo/Site/Sockshare.pm \
-	  lib/FlashVideo/Site/Daum.pm blib/lib/FlashVideo/Site/Daum.pm \
-	  lib/FlashVideo/Site/Munkvideo.pm blib/lib/FlashVideo/Site/Munkvideo.pm \
+	  lib/FlashVideo/Site/Motherless.pm blib/lib/FlashVideo/Site/Motherless.pm \
+	  lib/FlashVideo/Site/Videolectures.pm blib/lib/FlashVideo/Site/Videolectures.pm \
+	  lib/FlashVideo/Site/Blip.pm blib/lib/FlashVideo/Site/Blip.pm \
+	  lib/FlashVideo/Site/Nasa.pm blib/lib/FlashVideo/Site/Nasa.pm \
+	  lib/FlashVideo/Site/Canoe.pm blib/lib/FlashVideo/Site/Canoe.pm \
+	  lib/FlashVideo/Site/Stickam.pm blib/lib/FlashVideo/Site/Stickam.pm \
 	  lib/FlashVideo/Site/Divxstage.pm blib/lib/FlashVideo/Site/Divxstage.pm \
-	  lib/FlashVideo/Site/Msn.pm blib/lib/FlashVideo/Site/Msn.pm \
+	  lib/FlashVideo/Site/Tv4play.pm blib/lib/FlashVideo/Site/Tv4play.pm \
+	  lib/FlashVideo/Site/Ima.pm blib/lib/FlashVideo/Site/Ima.pm \
 	  lib/FlashVideo/Site/Oppetarkiv.pm blib/lib/FlashVideo/Site/Oppetarkiv.pm \
-	  lib/FlashVideo/Site/Mylifetime.pm blib/lib/FlashVideo/Site/Mylifetime.pm \
+	  lib/FlashVideo/Site/Cbsnews.pm blib/lib/FlashVideo/Site/Cbsnews.pm \
+	  lib/FlashVideo/Site/Redtube.pm blib/lib/FlashVideo/Site/Redtube.pm \
+	  lib/FlashVideo/Site/Abclocal.pm blib/lib/FlashVideo/Site/Abclocal.pm \
+	  lib/FlashVideo/Site/Starwars.pm blib/lib/FlashVideo/Site/Starwars.pm \
+	  lib/FlashVideo/Site/Pennyarcade.pm blib/lib/FlashVideo/Site/Pennyarcade.pm \
+	  lib/FlashVideo/Site/Apple.pm blib/lib/FlashVideo/Site/Apple.pm \
+	  lib/FlashVideo/Site/Yourupload.pm blib/lib/FlashVideo/Site/Yourupload.pm \
+	  lib/FlashVideo/Site/Xhamster.pm blib/lib/FlashVideo/Site/Xhamster.pm \
+	  lib/FlashVideo/Site/Tv3play.pm blib/lib/FlashVideo/Site/Tv3play.pm \
+	  lib/FlashVideo/VideoPreferences.pm blib/lib/FlashVideo/VideoPreferences.pm \
+	  lib/FlashVideo/FFmpegDownloader.pm blib/lib/FlashVideo/FFmpegDownloader.pm \
+	  lib/FlashVideo/Site/Liveleak.pm blib/lib/FlashVideo/Site/Liveleak.pm \
+	  lib/FlashVideo/Site/Vitheque.pm blib/lib/FlashVideo/Site/Vitheque.pm \
+	  lib/FlashVideo/Site/Wat.pm blib/lib/FlashVideo/Site/Wat.pm \
+	  lib/FlashVideo/Site/Expertvillage.pm blib/lib/FlashVideo/Site/Expertvillage.pm \
+	  lib/FlashVideo/Site/Vkontakte.pm blib/lib/FlashVideo/Site/Vkontakte.pm \
+	  lib/FlashVideo/Site/Ardmediathek.pm blib/lib/FlashVideo/Site/Ardmediathek.pm \
+	  lib/FlashVideo/Site/Metacafe.pm blib/lib/FlashVideo/Site/Metacafe.pm \
+	  lib/FlashVideo/Site/Youku.pm blib/lib/FlashVideo/Site/Youku.pm \
+	  lib/FlashVideo/Site/Mitworld.pm blib/lib/FlashVideo/Site/Mitworld.pm \
+	  lib/FlashVideo/Site/Scivee.pm blib/lib/FlashVideo/Site/Scivee.pm \
+	  lib/FlashVideo/Site/4od.pm blib/lib/FlashVideo/Site/4od.pm 
+	$(NOECHO) $(ABSPERLRUN) -MExtUtils::Install -e 'pm_to_blib({@ARGV}, '\''$(INST_LIB)/auto'\'', q[$(PM_FILTER)], '\''$(PERM_DIR)'\'')' -- \
+	  lib/FlashVideo/Site/Video44.pm blib/lib/FlashVideo/Site/Video44.pm \
+	  lib/FlashVideo/Site/Google.pm blib/lib/FlashVideo/Site/Google.pm \
+	  lib/FlashVideo/Site/Sapo.pm blib/lib/FlashVideo/Site/Sapo.pm \
+	  lib/FlashVideo/Site/Kidswb.pm blib/lib/FlashVideo/Site/Kidswb.pm \
+	  lib/FlashVideo/Downloader.pm blib/lib/FlashVideo/Downloader.pm \
+	  lib/FlashVideo/Site/Megavideo.pm blib/lib/FlashVideo/Site/Megavideo.pm \
+	  lib/FlashVideo/Site/Sockshare.pm blib/lib/FlashVideo/Site/Sockshare.pm \
+	  lib/FlashVideo/Site/Adultswim.pm blib/lib/FlashVideo/Site/Adultswim.pm \
+	  lib/FlashVideo/Site/Itv.pm blib/lib/FlashVideo/Site/Itv.pm \
+	  lib/FlashVideo/Site.pm blib/lib/FlashVideo/Site.pm \
+	  lib/FlashVideo/Site/Todaysbigthing.pm blib/lib/FlashVideo/Site/Todaysbigthing.pm \
+	  lib/FlashVideo/Site/Mtvnservices.pm blib/lib/FlashVideo/Site/Mtvnservices.pm \
+	  lib/FlashVideo/Site/Bing.pm blib/lib/FlashVideo/Site/Bing.pm \
+	  lib/FlashVideo/Site/About.pm blib/lib/FlashVideo/Site/About.pm \
+	  lib/FlashVideo/Site/Arte.pm blib/lib/FlashVideo/Site/Arte.pm \
+	  lib/FlashVideo/Site/Msn.pm blib/lib/FlashVideo/Site/Msn.pm \
+	  lib/FlashVideo/Site/Theonion.pm blib/lib/FlashVideo/Site/Theonion.pm \
+	  lib/FlashVideo/Site/Sbs.pm blib/lib/FlashVideo/Site/Sbs.pm \
+	  lib/FlashVideo/Site/Tv.pm blib/lib/FlashVideo/Site/Tv.pm \
+	  lib/FlashVideo/Site/Facebook.pm blib/lib/FlashVideo/Site/Facebook.pm \
+	  lib/FlashVideo/Site/Channel5.pm blib/lib/FlashVideo/Site/Channel5.pm \
+	  lib/FlashVideo/Site/Aniboom.pm blib/lib/FlashVideo/Site/Aniboom.pm \
+	  lib/FlashVideo/Site/Amazon.pm blib/lib/FlashVideo/Site/Amazon.pm \
+	  lib/FlashVideo/Site/Nick.pm blib/lib/FlashVideo/Site/Nick.pm \
+	  lib/FlashVideo/Site/Kanal5play.pm blib/lib/FlashVideo/Site/Kanal5play.pm \
+	  lib/FlashVideo/Site/Msnbc.pm blib/lib/FlashVideo/Site/Msnbc.pm \
+	  lib/FlashVideo/Site/Gorillavid.pm blib/lib/FlashVideo/Site/Gorillavid.pm \
+	  lib/FlashVideo/Site/Brightcove.pm blib/lib/FlashVideo/Site/Brightcove.pm \
+	  lib/FlashVideo/Site/Tv3.pm blib/lib/FlashVideo/Site/Tv3.pm \
+	  lib/FlashVideo/Site/Ctv.pm blib/lib/FlashVideo/Site/Ctv.pm \
+	  lib/FlashVideo/Site/5min.pm blib/lib/FlashVideo/Site/5min.pm \
+	  lib/FlashVideo/Site/Daum.pm blib/lib/FlashVideo/Site/Daum.pm \
+	  lib/FlashVideo/Site/Muzu.pm blib/lib/FlashVideo/Site/Muzu.pm \
+	  lib/FlashVideo/Site/Videobb.pm blib/lib/FlashVideo/Site/Videobb.pm \
+	  lib/FlashVideo/Site/Videojug.pm blib/lib/FlashVideo/Site/Videojug.pm \
+	  lib/FlashVideo/Site/Ehow.pm blib/lib/FlashVideo/Site/Ehow.pm \
+	  lib/FlashVideo/Site/Cultureunplugged.pm blib/lib/FlashVideo/Site/Cultureunplugged.pm \
+	  lib/FlashVideo/Site/Slashcontrol.pm blib/lib/FlashVideo/Site/Slashcontrol.pm \
+	  lib/FlashVideo/Site/Cartoonnetwork.pm blib/lib/FlashVideo/Site/Cartoonnetwork.pm 
+	$(NOECHO) $(ABSPERLRUN) -MExtUtils::Install -e 'pm_to_blib({@ARGV}, '\''$(INST_LIB)/auto'\'', q[$(PM_FILTER)], '\''$(PERM_DIR)'\'')' -- \
+	  lib/FlashVideo/Site/Joemonster.pm blib/lib/FlashVideo/Site/Joemonster.pm \
+	  lib/FlashVideo/URLFinder.pm blib/lib/FlashVideo/URLFinder.pm \
+	  lib/FlashVideo/Site/Stagevu.pm blib/lib/FlashVideo/Site/Stagevu.pm \
+	  lib/FlashVideo/Site/Youtubenocookie.pm blib/lib/FlashVideo/Site/Youtubenocookie.pm \
+	  lib/FlashVideo/Site/Tou.pm blib/lib/FlashVideo/Site/Tou.pm \
+	  lib/FlashVideo/Site/Pinkbike.pm blib/lib/FlashVideo/Site/Pinkbike.pm \
+	  lib/FlashVideo/Site/Tv6play.pm blib/lib/FlashVideo/Site/Tv6play.pm \
+	  lib/FlashVideo/Site/Bbc.pm blib/lib/FlashVideo/Site/Bbc.pm \
+	  lib/FlashVideo/VideoPreferences/Account.pm blib/lib/FlashVideo/VideoPreferences/Account.pm \
+	  lib/FlashVideo/Site/Zdf.pm blib/lib/FlashVideo/Site/Zdf.pm \
+	  lib/FlashVideo/Site/Youtube.pm blib/lib/FlashVideo/Site/Youtube.pm \
+	  lib/FlashVideo/Site/Nicovideo.pm blib/lib/FlashVideo/Site/Nicovideo.pm \
+	  lib/FlashVideo/Site/Ted.pm blib/lib/FlashVideo/Site/Ted.pm \
+	  lib/FlashVideo/Site/Cnet.pm blib/lib/FlashVideo/Site/Cnet.pm \
+	  lib/FlashVideo/Site/Gawker.pm blib/lib/FlashVideo/Site/Gawker.pm \
+	  lib/FlashVideo/Site/Filebox.pm blib/lib/FlashVideo/Site/Filebox.pm \
+	  lib/FlashVideo/Site/Megaporn.pm blib/lib/FlashVideo/Site/Megaporn.pm \
+	  lib/FlashVideo/Site/Ringtv.pm blib/lib/FlashVideo/Site/Ringtv.pm \
+	  lib/FlashVideo/Site/Dailymotion.pm blib/lib/FlashVideo/Site/Dailymotion.pm \
 	  lib/FlashVideo/JSON.pm blib/lib/FlashVideo/JSON.pm \
 	  lib/FlashVideo/Site/Youtu.pm blib/lib/FlashVideo/Site/Youtu.pm \
-	  lib/FlashVideo/Site/Cbsnews.pm blib/lib/FlashVideo/Site/Cbsnews.pm \
-	  lib/FlashVideo/Site/Pennyarcade.pm blib/lib/FlashVideo/Site/Pennyarcade.pm \
-	  lib/FlashVideo/Site/Videobb.pm blib/lib/FlashVideo/Site/Videobb.pm \
+	  lib/FlashVideo/Site/Fora.pm blib/lib/FlashVideo/Site/Fora.pm \
 	  lib/FlashVideo/Mechanize.pm blib/lib/FlashVideo/Mechanize.pm \
-	  lib/FlashVideo/Site/Nick.pm blib/lib/FlashVideo/Site/Nick.pm \
-	  lib/FlashVideo/Site/Tva.pm blib/lib/FlashVideo/Site/Tva.pm \
-	  lib/FlashVideo/Site/Vidzur.pm blib/lib/FlashVideo/Site/Vidzur.pm \
-	  lib/FlashVideo/Site/Google.pm blib/lib/FlashVideo/Site/Google.pm \
-	  lib/FlashVideo/Site/Redtube.pm blib/lib/FlashVideo/Site/Redtube.pm \
-	  lib/FlashVideo/Site/Ima.pm blib/lib/FlashVideo/Site/Ima.pm \
-	  lib/FlashVideo/Site/Expertvillage.pm blib/lib/FlashVideo/Site/Expertvillage.pm \
-	  lib/FlashVideo/RTMPDownloader.pm blib/lib/FlashVideo/RTMPDownloader.pm 
-	$(NOECHO) $(ABSPERLRUN) -MExtUtils::Install -e 'pm_to_blib({@ARGV}, '\''$(INST_LIB)/auto'\'', q[$(PM_FILTER)], '\''$(PERM_DIR)'\'')' -- \
-	  lib/FlashVideo/Site/Tv3play.pm blib/lib/FlashVideo/Site/Tv3play.pm \
-	  lib/FlashVideo/Site/Xhamster.pm blib/lib/FlashVideo/Site/Xhamster.pm \
-	  lib/FlashVideo/Site/Starwars.pm blib/lib/FlashVideo/Site/Starwars.pm \
-	  lib/FlashVideo/Search.pm blib/lib/FlashVideo/Search.pm \
-	  lib/FlashVideo/VideoPreferences/Quality.pm blib/lib/FlashVideo/VideoPreferences/Quality.pm \
-	  lib/FlashVideo/Site/Youku.pm blib/lib/FlashVideo/Site/Youku.pm \
-	  lib/FlashVideo/Site/Tv8play.pm blib/lib/FlashVideo/Site/Tv8play.pm \
-	  lib/FlashVideo/Site/Muzu.pm blib/lib/FlashVideo/Site/Muzu.pm \
-	  lib/FlashVideo/Site/Traileraddict.pm blib/lib/FlashVideo/Site/Traileraddict.pm \
-	  lib/FlashVideo/Site/Nhk.pm blib/lib/FlashVideo/Site/Nhk.pm \
-	  lib/FlashVideo/Site/Gorillavid.pm blib/lib/FlashVideo/Site/Gorillavid.pm \
-	  lib/FlashVideo/Site/Theonion.pm blib/lib/FlashVideo/Site/Theonion.pm \
-	  lib/FlashVideo/Site/Motherless.pm blib/lib/FlashVideo/Site/Motherless.pm \
-	  lib/FlashVideo/Site/Zdf.pm blib/lib/FlashVideo/Site/Zdf.pm \
-	  lib/FlashVideo/Site/Cbs.pm blib/lib/FlashVideo/Site/Cbs.pm \
-	  lib/FlashVideo/Site/Abc.pm blib/lib/FlashVideo/Site/Abc.pm \
-	  lib/FlashVideo/Site/Nbc.pm blib/lib/FlashVideo/Site/Nbc.pm \
-	  lib/FlashVideo/Site/Tou.pm blib/lib/FlashVideo/Site/Tou.pm \
-	  lib/FlashVideo/Site/Myvideo.pm blib/lib/FlashVideo/Site/Myvideo.pm \
-	  lib/FlashVideo/Utils.pm blib/lib/FlashVideo/Utils.pm \
-	  lib/FlashVideo/Site/Mitworld.pm blib/lib/FlashVideo/Site/Mitworld.pm \
-	  lib/FlashVideo/Site/Ted.pm blib/lib/FlashVideo/Site/Ted.pm \
-	  lib/FlashVideo/Site/Putlocker.pm blib/lib/FlashVideo/Site/Putlocker.pm \
-	  lib/FlashVideo/Site/Ardmediathek.pm blib/lib/FlashVideo/Site/Ardmediathek.pm \
-	  lib/FlashVideo/Site/Googlevideosearch.pm blib/lib/FlashVideo/Site/Googlevideosearch.pm \
-	  lib/FlashVideo/Site/Vrak.pm blib/lib/FlashVideo/Site/Vrak.pm \
-	  lib/FlashVideo/Site/Wat.pm blib/lib/FlashVideo/Site/Wat.pm \
-	  lib/FlashVideo/Site/Pinkbike.pm blib/lib/FlashVideo/Site/Pinkbike.pm \
 	  lib/FlashVideo/Site/Tbs.pm blib/lib/FlashVideo/Site/Tbs.pm \
-	  lib/FlashVideo/Site/Brightcove.pm blib/lib/FlashVideo/Site/Brightcove.pm \
-	  lib/FlashVideo/Site/Grindtv.pm blib/lib/FlashVideo/Site/Grindtv.pm \
-	  lib/FlashVideo/Site/Sbs.pm blib/lib/FlashVideo/Site/Sbs.pm \
-	  lib/FlashVideo/Site/Ustream.pm blib/lib/FlashVideo/Site/Ustream.pm \
-	  lib/FlashVideo/VideoPreferences.pm blib/lib/FlashVideo/VideoPreferences.pm \
-	  lib/FlashVideo/Site/Last.pm blib/lib/FlashVideo/Site/Last.pm \
-	  lib/FlashVideo/Site/Apple.pm blib/lib/FlashVideo/Site/Apple.pm \
-	  lib/FlashVideo/Site/Ooyala.pm blib/lib/FlashVideo/Site/Ooyala.pm 
+	  lib/FlashVideo/Site/Zshare.pm blib/lib/FlashVideo/Site/Zshare.pm \
+	  lib/FlashVideo/Site/Vidzur.pm blib/lib/FlashVideo/Site/Vidzur.pm \
+	  lib/FlashVideo/Site/Vrak.pm blib/lib/FlashVideo/Site/Vrak.pm \
+	  lib/FlashVideo/Site/Movieclips.pm blib/lib/FlashVideo/Site/Movieclips.pm \
+	  lib/FlashVideo/Site/Svtplay.pm blib/lib/FlashVideo/Site/Svtplay.pm \
+	  lib/FlashVideo/Site/Flickr.pm blib/lib/FlashVideo/Site/Flickr.pm \
+	  lib/FlashVideo/Site/Videofun.pm blib/lib/FlashVideo/Site/Videofun.pm \
+	  lib/FlashVideo/Site/Xnxx.pm blib/lib/FlashVideo/Site/Xnxx.pm \
+	  lib/FlashVideo/Site/Escapistmagazine.pm blib/lib/FlashVideo/Site/Escapistmagazine.pm \
+	  lib/FlashVideo/Site/Fliqz.pm blib/lib/FlashVideo/Site/Fliqz.pm \
+	  lib/FlashVideo/Site/Xvideos.pm blib/lib/FlashVideo/Site/Xvideos.pm \
+	  lib/FlashVideo/Site/Munkvideo.pm blib/lib/FlashVideo/Site/Munkvideo.pm \
+	  lib/FlashVideo/Site/Ustream.pm blib/lib/FlashVideo/Site/Ustream.pm 
 	$(NOECHO) $(TOUCH) pm_to_blib
 
 

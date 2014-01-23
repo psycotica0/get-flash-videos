@@ -1,3 +1,9 @@
+libapp-get-flash-videos-perl (1.25-psycotica0-2014-01-23-01~2d84db) unstable; urgency=low
+
+  * Fix Debian Dependency
+
+ -- Christopher Vollick <0@psycoti.ca>  Thu, 23 Jan 2014 12:31:17 -0500
+
 libapp-get-flash-videos-perl (1.25-psycotica0-2014-01-23-00~2d84db) unstable; urgency=low
 
   * Cut Release

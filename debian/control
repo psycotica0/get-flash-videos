@@ -15,7 +15,7 @@ Homepage: http://code.google.com/p/get-flash-videos/
 
 Package: get-flash-videos
 Architecture: all
-Depends: libcrypt-blowfish-pp-perl,
+Depends: libcrypt-blowfish-perl,
   libdata-amf-perl,
   libencode-locale-perl,
   libhtml-parser-perl,
