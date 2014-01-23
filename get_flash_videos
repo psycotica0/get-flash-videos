@@ -410,7 +410,7 @@ sub download {
     if(ref $data eq 'HASH') {
       if (defined($data->{downloader}) && $data->{downloader} eq "ffmpeg") {
         $downloader = FlashVideo::FFmpegDownloader->new;
-        $file ||= $data->{file};
+        $file ||= $data->{flv};
       } else {
         # RTMP data
         $downloader = FlashVideo::RTMPDownloader->new;
@@ -672,6 +672,18 @@ sub install_plugin {
 
     return 1;
   }
+  # Handle redirects from plugin URL's, e.g. http to https
+  #
+  elsif ($browser->response->is_redirect) { 
+    my $redirect_url = $browser->response->header('Location');
+
+    # Reconstruct new URI to account for relative redirect URL's 
+    #
+    $redirect_url = URI->new_abs($redirect_url, $browser->response->base);
+    info "Plugin download redirected $redirect_url";
+
+    return install_plugin($browser, $redirect_url, $file);
+  }
   else {
     warn "Download failed: " . $browser->response->status_line;
   }
@@ -695,8 +707,11 @@ sub plugin_loader {
 
     debug "Trying to open plugin $plugin_dir/$plugin_name";
 
-    if (open my $plugin_fh, '<', "$plugin_dir/$plugin_name") {
-      return $plugin_fh; # Perl then reads the plugin from the FH
+    if (-s "$plugin_dir/$plugin_name") {
+      if (open my $plugin_fh, '<', "$plugin_dir/$plugin_name") {
+        return $plugin_fh; # Perl then reads the plugin from the FH
+      }
+      info "Failed to open plugin $plugin_dir/$plugin_name $!";
     }
   }
 

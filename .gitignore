@@ -4,11 +4,13 @@ combined-get_flash_videos*
 get_flash_videos-*
 get_flash_videos.1
 .sitemodules
+.DS_Store
 wiki
 *.bak
 *.old
 *.mp4
 *.flv
+*.m3u8
 *.ogg
 *.webm
 *.gz
